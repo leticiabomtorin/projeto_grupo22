@@ -1,0 +1,335 @@
+/*  
+1- Código para zerar margem. 
+2- Define fonte
+3- padding zerar borda interna.
+4-  remove margem padrão do documento.
+5- tamanho da fonte.
+*/
+html,
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-size: 15px;
+}
+
+
+/* 
+1- devini a largura da div 100%
+2- defini altura da div 200px
+3- defini a cor de fundo background-color azul
+4- defini a imagem de fundo backgraund-image
+5- defini posição da imagem backgraund-position centrada
+*/
+
+
+.gao-quemsou {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+}
+
+/* 
+1- defini o preenchemento 5px (padding )
+2- defini a margem 0 porque ja vem com o padrão
+3- defini o estilo da lista em none, porque já vem com o padrão 
+*/
+.gao-quemsou ul {
+    padding: 5px;
+    margin: 0px;
+    list-style: none;
+}
+
+/* 
+1- flutua a esquerda ( float left )
+2- defini a largura da tag li obs: 25%
+3- defini o alinhamento tag li ao centro obs: links centrados
+*/
+.gao-quemsou ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+
+/* 
+1- devini a largura da div 100%
+2- defini altura da div 400px
+3- defini a cor de fundo background-color azul
+4- defini a imagem de fundo backgraund-image
+5- defini posição da imagem backgraund-position centrada
+*/
+
+
+.header {
+    width: 100%;
+    height: 400px;
+    background-color: #08101e;
+    background-image: url(../images/covid.png);
+    background-position: center;
+}
+
+/* 
+1- defini o preenchemento 5px (padding )
+2- defini a margem 0 porque ja vem com o padrão
+3- defini o estilo da lista em none, porque já vem com o padrão 
+*/
+.header ul {
+    padding: 5px;
+    margin: 0px;
+    list-style: none;
+}
+
+/* 
+1- flutua a esquerda ( float left )
+2- defini a largura da tag li obs: 25%
+3- defini o alinhamento tag li ao centro obs: links centrados
+*/
+.header ul li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+/* 
+1- defini tamanho da fonte
+2- defini acor da fonte
+3- transforma o texto para caixa alta
+4- transforma o link em bloco
+5- remove padrão de link
+6-  adiciona preenchemento de 10px, considerando que o elemento está em estado de bloco
+
+*/
+.header ul li a {
+    font-size: 13px;
+    color: #ffffff;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* 
+1- defini o backgraund, cor de fundo do link 
+2- defini o arredondamento da borda  do link
+*/
+
+.header ul li a:hover {
+    background-color: #040a14;
+    border-radius: 5px;
+}
+
+
+
+/* 
+1- defini o backgraund, cor de fundo do link, obs: conforme a página o link destaca indicando o usuário a página que está 
+2- defini o arredondamento da borda  do link
+*/
+
+.header ul li a.ativo {
+    background-color: #000103;
+    border-radius: 5px;
+}
+
+/* 
+1- defini largura da tela com 80% 
+2- defini alinhamento da div.content ao centro
+
+*/
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* 
+1-  defini a cor dos titulos h1 e h2 na cor azul
+
+*/
+
+.content h1,
+.content h2 {
+    color: #08101e;
+}
+
+/* 
+1- reseta o comportamento padrão de uma lista removendo padding, margin e list-style
+*/
+
+.bloco-de-noticia ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+/* 
+1- defini flutuação da lista a esquerda
+2- define a largura de 50%
+*/
+
+.bloco-de-noticia ul li {
+    float: left;
+    width: 50%;
+}
+
+/* 
+1- defini a cor de fundo
+2- define a borda como sólida , 1px de largura e cor cinza
+3- define preenchemento interno de 10px
+4- define o arredondamento da borda em 5px
+5- define margem de baixo de 20px
+*/
+
+.bloco-de-noticia {
+    background-color: #f8f8f8;
+    border: solid 1px #efefef;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* 
+1- define cor do texto
+2  define espaçamento entre linhas
+3- remove a margem padrão da tag p
+4- define um preenchemento na parte de baixo de 20px
+*/
+.bloco-de-noticia p.chamada {
+    color: #0c244d;
+    line-height: 19px;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+/* 
+1- define a cor do texto
+2- define o espaçamento entre linhas de 22px
+
+*/
+.bloco-de-noticia p {
+    color: #000000;
+    line-height: 22px;
+}
+
+/* 
+1- define o arredondamento das bordas em 7px
+
+*/
+.bloco-de-noticia img {
+    border-radius: 7px;
+}
+
+
+/* 
+1- define a largura em 100%
+2- define a altura com alto, ou seja automático 
+3- define uma cor de fundo
+4- alinha o texto ao centro
+
+*/
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #08101e;
+    text-align: center;
+}
+
+/* 
+define tamanho da imagem em 50px
+2- adiciona uma margem de 10px, afim de manter distanciamento entre as imagens 
+
+*/
+.footer img {
+    width: 50px;
+    margin: 10px;
+}
+
+/* 
+1- define cor do texto
+2- adiciona preenchimento em 30px na tag p
+*/
+
+.footer p {
+    color: #ffffff;
+    padding: 30px;
+}
+
+/* 
+1- remove o comportamento padrão da tag ul, com padding, margin e list-styio 
+*/
+ul.meus-dados {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+/* 
+1- adiciona um preenchemento na parte de baixo da lista de 7px
+
+*/
+ul.meus-dados li {
+    padding-bottom: 7px;
+}
+
+/* 
+define largura do imput em 100%
+2- adiciona preenchemento de 10px 
+3- adiciona uma margem na parte de baixo de 10px
+
+*/
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* 
+1- define largura de 100%
+2- define preenchimento em 10px 
+3- define uma altura de 100px
+4- define margem bottom 10px
+*/
+textarea {
+    width: 100%;
+    padding: 10px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+/* 
+1- define preenchimento de 15px
+2- define uma cor de fundo
+3- transforma o texto em caixa alta
+4- define a cor do texto
+5- remove a borda padrão
+*/
+button {
+    padding: 15px;
+    background-color: #0c244d;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+}
+
+/* 
+1- remove decoração padrão do link
+2- define preenchemento de 7px
+3- define a cor de fundo
+4- define a cor do texto
+5- define arredondamento das bordas em 5px
+
+*/
+
+a.link-topo {
+    text-decoration: none;
+    padding: 7px;
+    background-color: #0c244d;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.gao img {
+    width: 100%;
+    height: 400px;
+    margin: 10px;
+}
